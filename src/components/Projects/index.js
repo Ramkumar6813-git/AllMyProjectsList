@@ -5,6 +5,7 @@ import ProjectItem from '../ProjectItem'
 import {
   BgContainer,
   InputDiv,
+  SelectName,
   Select,
   Option,
   UnorderedList,
@@ -133,6 +134,7 @@ class Projects extends Component {
         <Header />
         <BgContainer>
           <InputDiv>
+            <SelectName>Select Category :-</SelectName>
             <Select onChange={this.onChangeCategory}>
               {categoriesList.map(eachProjectItem => (
                 <Option value={eachProjectItem.id} key={eachProjectItem.id}>
